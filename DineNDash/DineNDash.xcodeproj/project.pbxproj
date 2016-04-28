@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					4E142E4D1CD18ED000289E52 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Q694Z8489Z;
+						DevelopmentTeam = PF2XQE6VZQ;
 					};
 					4E142E641CD18ED000289E52 = {
 						CreatedOnToolsVersion = 7.3;
@@ -394,7 +394,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DineNDash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,7 +407,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DineNDash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +421,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DineNDashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +434,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DineNDashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = DineNDashUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDashUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = DineNDashUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDashUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,6 +485,7 @@
 				4E142E7B1CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E142E7C1CD18ED000289E52 /* Build configuration list for PBXNativeTarget "DineNDashTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +494,7 @@
 				4E142E7E1CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E142E7F1CD18ED000289E52 /* Build configuration list for PBXNativeTarget "DineNDashUITests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +503,7 @@
 				4E142E811CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
