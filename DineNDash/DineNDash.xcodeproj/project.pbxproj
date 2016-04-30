@@ -14,6 +14,10 @@
 		4E142E5F1CD18ED000289E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E142E5D1CD18ED000289E52 /* LaunchScreen.storyboard */; };
 		4E142E6A1CD18ED000289E52 /* DineNDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E142E691CD18ED000289E52 /* DineNDashTests.swift */; };
 		4E142E751CD18ED000289E52 /* DineNDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E142E741CD18ED000289E52 /* DineNDashUITests.swift */; };
+		4E7FBD5E1CD567AE002DBA0E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7FBD5B1CD567AE002DBA0E /* FBSDKCoreKit.framework */; };
+		4E7FBD5F1CD567AE002DBA0E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7FBD5C1CD567AE002DBA0E /* FBSDKLoginKit.framework */; };
+		4E7FBD601CD567AE002DBA0E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7FBD5D1CD567AE002DBA0E /* FBSDKShareKit.framework */; };
+		4E7FBD621CD56AC4002DBA0E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7FBD611CD56AC4002DBA0E /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		4E142E701CD18ED000289E52 /* DineNDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DineNDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E142E741CD18ED000289E52 /* DineNDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineNDashUITests.swift; sourceTree = "<group>"; };
 		4E142E761CD18ED000289E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7FBD5A1CD55FE3002DBA0E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4E7FBD5B1CD567AE002DBA0E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4E7FBD5C1CD567AE002DBA0E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4E7FBD5D1CD567AE002DBA0E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		4E7FBD611CD56AC4002DBA0E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7FBD5F1CD567AE002DBA0E /* FBSDKLoginKit.framework in Frameworks */,
+				4E7FBD5E1CD567AE002DBA0E /* FBSDKCoreKit.framework in Frameworks */,
+				4E7FBD601CD567AE002DBA0E /* FBSDKShareKit.framework in Frameworks */,
+				4E7FBD621CD56AC4002DBA0E /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 		4E142E451CD18ED000289E52 = {
 			isa = PBXGroup;
 			children = (
+				4E7FBD5A1CD55FE3002DBA0E /* Bridging-Header.h */,
 				4E142E501CD18ED000289E52 /* DineNDash */,
 				4E142E681CD18ED000289E52 /* DineNDashTests */,
 				4E142E731CD18ED000289E52 /* DineNDashUITests */,
@@ -97,6 +111,10 @@
 		4E142E501CD18ED000289E52 /* DineNDash */ = {
 			isa = PBXGroup;
 			children = (
+				4E7FBD611CD56AC4002DBA0E /* Bolts.framework */,
+				4E7FBD5B1CD567AE002DBA0E /* FBSDKCoreKit.framework */,
+				4E7FBD5C1CD567AE002DBA0E /* FBSDKLoginKit.framework */,
+				4E7FBD5D1CD567AE002DBA0E /* FBSDKShareKit.framework */,
 				4E142E511CD18ED000289E52 /* AppDelegate.swift */,
 				4E142E531CD18ED000289E52 /* ViewController.swift */,
 				4E142E5B1CD18ED000289E52 /* Assets.xcassets */,
@@ -394,10 +412,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DineNDash",
+				);
 				INFOPLIST_FILE = DineNDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -405,10 +428,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DineNDash",
+				);
 				INFOPLIST_FILE = DineNDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.DineNDash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -477,6 +505,7 @@
 				4E142E7B1CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E142E7C1CD18ED000289E52 /* Build configuration list for PBXNativeTarget "DineNDashTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +514,7 @@
 				4E142E7E1CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E142E7F1CD18ED000289E52 /* Build configuration list for PBXNativeTarget "DineNDashUITests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +523,7 @@
 				4E142E811CD18ED000289E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
